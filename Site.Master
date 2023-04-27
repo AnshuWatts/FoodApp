@@ -1,0 +1,128 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Master.vb" Inherits="FoodApp.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FoodApp</title>
+    <link href="assets/css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- Navbar --%>
+
+         <header class="site-header">
+            <div class="header-logo">
+                <a href="Home.aspx">
+                    <img src="/assets/images/logo.png" alt=""/>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="Home.aspx" class="home-active">Home</a></li>
+                    <li><a href="Menu.aspx" class="menu-active" >Menu</a></li>
+                    <li><a href="Contact.aspx">Contact</a></li>
+                    <li><a href="About.aspx" class="about-active">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="Cart.aspx" class="header-btn header-cart">
+                    <i class="uil uil-shopping-bag"></i>
+                </a>
+                <asp:LinkButton ID="btnAccount" CssClass="header-btn" runat="server" ToolTip="Account"><i class="uil uil-user-md"></i></asp:LinkButton>
+           <asp:LinkButton ID="Logout" class="header-btn" runat="server" Tooltip="Log Out"><i class="uil uil-signout" ></i></asp:LinkButton>
+            </div>
+        </header>
+
+        <%-- Navbar End --%>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%-- Footer --%>
+
+        <footer id="footer">
+            <div class="footer-container top-footer">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, tenetur.
+                    </p>
+                    <div class="social-icon">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="uil uil-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="uil uil-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="uil uil-github-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="uil uil-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-table-info">
+                        <h3 class="h3-title">open hours</h3>
+                        <ul>
+                            <li><i class="uil uil-clock"></i> Mon-Thurs : 9am - 22pm</li>
+                            <li><i class="uil uil-clock"></i> Fri-Sun : 11am - 22pm</li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu food-nav-menu">
+                        <h3 class="h3-title">Links</h3>
+                        <ul class="column-2">
+                            <li>
+                                <a href="Home.aspx" >Home</a>
+                            </li>
+                            <li><a href="About.aspx">About</a></li>
+                            <li><a href="Menu.aspx">Menu</a></li>
+                            <li><a href="Contact.aspx">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <h3 class="h3-title">Company</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="copyright-text">
+                    <p>Copyright &copy; 2023 <span class="name">Kartik.</span>All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <%-- Footer End --%>
+
+    </form>
+ </body>
+</html>

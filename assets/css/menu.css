@@ -1,0 +1,132 @@
+﻿.menu-active {
+    color: #ff8243 !important;
+}
+
+#menu {
+    padding: 6rem;
+}
+
+.datalist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+.dish-container {
+    width: 30%;
+}
+
+.dish-box {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    display: flow-root;
+    padding: 0 30px 40px;
+    padding-top: 0;
+    margin: 130px 0 30px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+    .dish-box:hover {
+        transform: scale(1.03);
+    }
+.text-center {
+    text-align: center !important;
+}
+
+.dist-img {
+    margin-top: -110px;
+    margin-bottom: 30px;
+}
+
+    .dist-img>.img {
+        box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+.dish-rating {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dish-title {
+    padding: 0 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.dish-info>ul, .dist-bottom-row>ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+    .dish-info>ul>li {
+        display: inline-block;
+        flex: 1;
+    }
+
+        .dish-info>ul>li:last-child {
+            text-align: right;
+            border-left: 2px solid rgb(204 204 204 / 30%);
+        }
+
+        .dish-info>ul>li>p {
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-bottom: 2px;
+            font-weight: 300;
+            line-height: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .dish-info>ul>li>b {
+            font-weight: 600;
+        }
+
+.dish-info, .dist-bottom-row {
+    padding: 0 30px;
+}
+
+.dish-info {
+    border-bottom: 2px solid rgb(204 204 204 / 30%);
+    margin: 30px 0 30px;
+    padding-bottom: 30px;
+}
+
+.dist-bottom-row>ul>li {
+    display: flex;
+    align-items: center;
+}
+
+    .dist-bottom-row>ul>li>b {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+.dish-add-btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    cursor:pointer;
+    transition: 0.3s;
+    background: linear-gradient(145deg, #ffc954, #ffbc00);
+    box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+}
+
+.add > i, .dish-add-btn>i {
+    color: #ffffff;
+    
+}
+
+    .dish-add-btn:hover {
+        background: linear-gradient(145deg, #e3a92b, #ffc933);
+    }

@@ -1,0 +1,74 @@
+﻿#login-form, #signup-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    width: 30%;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    padding: 30px 40px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.form-container>h1{
+    font-size:2rem;
+    font-weight:500;
+}
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.user-name,.password {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    outline:none;
+    text-indent: 10px;
+    font-size: 1rem;
+    border: 2px solid rgb(204 204 204 / 30%);
+}
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(145deg, #ffc954, #ffbc00);
+    box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+}
+    .login-btn:hover {
+        background: linear-gradient(145deg, #e3a92b, #ffc933);
+    }
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+.create-account-wrap{
+    margin-top:20px;
+}
+.create-account-wrap>p{
+    font-size:15px;
+}
+.link {
+    color: #1cb0dc;
+}
